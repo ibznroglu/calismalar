@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      div.box {
+        background-color: gray;
+        width: 6%;
+        padding: 0.1rem;
+      }
+      nav ul {
+        margin-top: 0;
+      }
+      nav ul li {
+        padding: 0.2rem;
+        text-align: center;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      .same {
+        display: inline-block;
+        padding: 0 0 0 1.2rem;
+      }
+      nav {
+        display: none;
+      }
+      div.box input:checked + nav {
+        display: block;
+      }
+      div.box input[type="checkbox"] {
+        display: none;
+      }
+      div.box label {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <label for="button" class="same"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="button" class="same" />
+      <nav>
+        <ul>
+          <li><a href="#home">Ana Sayfa</a></li>
+          <li><a href="#products">Ürünler</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
