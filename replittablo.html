@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        user-select: none;
+      }
+      tr:nth-child(even) {
+        background-color: rgb(143, 138, 137);
+      }
+      .toplam,
+      .aratop {
+        text-align: right;
+      }
+      .basliklar,
+      .sonuc {
+        color: white;
+        background-color: rgb(54, 53, 53);
+      }
+      tbody tr:hover {
+        background-color: beige;
+        cursor: pointer;
+      }
+      .btn1,
+      .btn2 {
+        width: 150px;
+        height: 35px;
+        background-color: coral;
+        color: white;
+      }
+      .butonlar {
+        margin-left: 6rem;
+      }
+      .btn1:hover {
+        background-color: rgb(33, 156, 156);
+      }
+      .btn2:hover {
+        background-color: rgb(33, 156, 156);
+      }
+      .btn1::before {
+        content: "\f07a";
+        font: var(--fa-font-solid);
+        font-size: 20px;
+        color:black;
+      }
+      .btn2::before {
+        content: "\f09d";
+        font-family: "Font Awesome 6 Free";
+        font-size: 20px;
+        color: black;
+      }
+      .btn1{
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+  <br>
+    <table>
+      <thead>
+        <tr class="basliklar">
+          <th>Ürün Kodu</th>
+          <th>Ürün Adı</th>
+          <th>Miktar</th>
+          <th>Birim Fiyat</th>
+          <th>Ara Toplam</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>154654</td>
+          <td>Notebook</td>
+          <td>1</td>
+          <td>5.400 ₺</td>
+          <td>5.400 ₺</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>456466</td>
+          <td>Klavye</td>
+          <td>2</td>
+          <td>80 ₺</td>
+          <td>160 ₺</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>564646</td>
+          <td>Monitör</td>
+          <td>1</td>
+          <td>700 ₺</td>
+          <td>700 ₺</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>123598</td>
+          <td>Mouse</td>
+          <td>2</td>
+          <td>50 ₺</td>
+          <td>100 ₺</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>613448</td>
+          <td>Play Station</td>
+          <td>1</td>
+          <td>2500 ₺</td>
+          <td>2500 ₺</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>789799</td>
+          <td>Usb Bellek</td>
+          <td>3</td>
+          <td>120 ₺</td>
+          <td>360 ₺</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="sonuc">
+          <td class="toplam" colspan="4">TOPLAM</td>
+          <td class="aratop">9220 ₺</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </br>
+    <div class="butonlar">
+      <button class="btn1">&nbsp;&nbsp;Alışverişe Devam</button>
+      <button class="btn2">&nbsp;&nbsp;Ödemeye Geç</button>
+    </div>
+  </body>
+</html>
